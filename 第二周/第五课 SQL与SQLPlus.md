@@ -4,7 +4,7 @@
 
 ### 什么是SQL
 
-- 结构化查询语言(Structured Query Language)，由ANSI标准制定的标准语言，
+- **结构化查询语言(Structured Query Language)**，由ANSI标准制定的标准语言，
 - 是一种数据库查询和程序设计语言，用于存取数据以及查询、更新和管理关系数据库系统。
 - 补充
 
@@ -14,22 +14,18 @@
 
 ### SQL有哪些语句
 
-- 数据查询语言（DQL:Data Query Language）
-
+- **数据查询语言（DQL:Data Query Language）**
 	- 其语句，也称为“数据检索语句”，用以从表中获得数据，确定数据怎样在应用程序给出。
 	- DQL常用的保留字有SELECT、WHERE、ORDER BY、GROUP BY、HAVING。
-
-- 数据定义语言（DDL：Data Definition Language）：
-
+	
+- **数据定义语言（DDL：Data Definition Language）**
 	- 其语句包括动词CREATE和DROP，在数据库中创建新表或删除表（CREAT TABLE 或 DROP TABLE）。
-
-- 数据操作语言（DML：Data Manipulation Language）：
-
+	
+- **数据操作语言（DML：Data Manipulation Language）**
 	- 其语句包括动词INSERT，UPDATE和DELETE。它们分别用于添加，修改和删除表中的行。
-
-- 数据控制语言（DCL：Data Control Language）：
-
-	- 通过GRANT或REVOKE获得许可，确定单个用户和用户组对数据库对象的访问。
+	
+- **数据控制语言（DCL：Data Control Language）**
+- 通过GRANT或REVOKE获得许可，确定单个用户和用户组对数据库对象的访问。
 
 ### SQL的书写
 
@@ -48,7 +44,8 @@
 	- TOAD for Oracle
 	- Oracle SQL Developer
 - 命令行工具
-- sqlplus
+  - sqlplus
+
 
 ### 最常用的工具
 
@@ -81,30 +78,43 @@
 
 ![image-20211125155509387](D:\Documents\Oracle运维实战\第二周\第五课 SQL与SQLPlus.assets\image-20211125155509387.png)
 
-- SQL命令.md
+
 
 ### 查看当前连接的用户
 
-- SQL>show user;
+```sql
+SQL>show user;
+```
+
 - 解锁某个用户
 
-	- SQL>alter user scott account unlock;
+  ```sql
+  SQL>alter user scott account unlock;
+  ```
 
 - 修改某个用户密码
 
-	- SQL> alter user  scott account unlock; 
+  ```sql
+  SQL> alter user  scott account unlock; 
+  ```
 
 - 修改当前用户密码
 
-	- SQL> password
+  ```sql
+  SQL> password
+  ```
 
 - 给某个用户设置密码并解锁
 
-	- SQL> alter user hr identified by hr account unlock;
+  ```sql
+  SQL> alter user hr identified by hr account unlock;
+  ```
 
 ### 查看表的结构
 
-- SQL>desc tablename;
+```sql
+SQL>desc tablename;
+```
 
 ### 查看执行SQLPlus缓存
 
@@ -126,7 +136,7 @@ R[un] 中括号中的字符串省略原则是按顺序，若u省略，则n必须
 
   - change
 
-  	- C[HANGE] sepchar old [sepchar [new[sepchar]]]
+  	C[HANGE] sepchar old [sepchar [new[sepchar]]]
   	
   	![image-20211125155520590](D:\Documents\Oracle运维实战\第二周\第五课 SQL与SQLPlus.assets\image-20211125155520590.png)
 
@@ -246,3 +256,8 @@ R[un] 中括号中的字符串省略原则是按顺序，若u省略，则n必须
 
 		- COLUMN ename CLEAR
 
+
+
+## 5. 结构图
+
+![第五课 SQL与SQLPlus](D:\Documents\Oracle运维实战\第二周\第五课 SQL与SQLPlus.assets\第五课 SQL与SQLPlus.png)
