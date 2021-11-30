@@ -2,7 +2,9 @@
 
 1. 在虚拟机(服务器)中添加iso镜像
    
-   ![](file://D:%5CDocuments%5Cassets%5C2021-11-29-15-41-30-image.png)
+   [ VirtualBox中配置linux OS的本地磁盘镜像作为其软件源_kexianmiao的专栏-CSDN博客](https://blog.csdn.net/kexianmiao/article/details/52413382)
+   
+   ![](D:\Documents\Oracle运维实战\assets\2021-11-30-10-01-08-image.png)
 
 2. 建立挂载目录
    
@@ -13,15 +15,23 @@
 3. 挂载镜像
    
    ```shell
-   mount /dev/cdrom /mnt/cdrom
+   # 查看镜像挂载在那个盘
+   lsblk
+   
+   # 挂载到文件夹
+   mount /dev/sr1 /mnt/cdrom
    ```
 
 4. 备份原本的yum源文件
    
    ```shell
-   cd /etc/yum.repos.d
-   mkdir bak
-   mv * bak/
+   vim /etc/yum.repos.d/redhat.repo
+   
+   #[163]
+   #name=163
+   #baseurl=http://mirrors.163.com/centos/7/os/x86_64
+   #gpgcheck=0
+   #enabled=1
    ```
 
 5. 建立本地源文件
@@ -48,7 +58,18 @@
    yum makecache
    
    # 测试
-   yum repolist all ![](D:\Documents\assets\2021-11-29-15-49-00-image.png)
+   yum repolist all 
    ```
 
-![](D:\Documents\assets\2021-11-29-15-49-08-image.png)
+![](D:\Documents\Oracle运维实战\assets\a900036516d9f4c42d682e7a424ffdfb6e85d6da.png)
+
+
+
+7. 开机自动挂载
+   
+   ```shell
+   vim /etc/fstab
+   
+   
+   /dev/sr1 /mnt/cdrom iso9660 defaults 0 1
+   ```
