@@ -1,0 +1,1604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+</style>
+  <style>.markdown-body{font-size:14px;line-height:1.5;}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="管理实例">管理实例</h1>
+<h2 class="atx" id="1-实例概述">1. 实例概述</h2>
+<h3 class="atx" id="实例是什么？">实例是什么？</h3>
+<ul>
+<li><p>Oracle实例是访问Oracle数据库的方法。</p>
+</li>
+<li><p>一个实例只能打开一个数据库。</p>
+</li>
+<li><p>实例是由内存SGA和后台进程组成的。</p>
+</li>
+<li><p>一个数据库就是在磁盘上是一堆物理文件组成的。实例连接上数据库后，可以帮助用户去管理数据库。</p>
+</li>
+</ul>
+<p><strong>在单实例中，实例名与数据库名一般是相同的，但也可以不同，因为实例与数据库是相互独立的。</strong></p>
+<h3 class="atx" id="sga主要的作用">SGA主要的作用</h3>
+<p>1）将数据库文件中的内容缓存到内存
+2）维护Oracle内部的数据结构信息
+3）缓存重做日志条目
+4）存储SQL执行计划</p>
+<h2 class="atx" id="2-单实例和多实例">2. 单实例和多实例</h2>
+<h3 class="atx" id="单实例">单实例</h3>
+<ul>
+<li>一个实例对应一个数据库</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-06-09-32-40-image.png"></p>
+<h3 class="atx" id="多实例">多实例</h3>
+<ul>
+<li><p>即RAC(Real Application Clusters), 多个实例对应一个数据库</p>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-06-09-34-08-image.png"></p>
+</li>
+</ul>
+<h2 class="atx" id="3-启动实例的认证模式">3. 启动实例的认证模式</h2>
+<h3 class="atx" id="数据库最高账号sys的密码文件认证模式">数据库最高账号sys的密码文件认证模式</h3>
+<ol>
+<li><p>sysdba或sysoper本地操作系统认证登录</p>
+</li>
+<li><p>sysdba或sysoper远程客户端通过密码文件认证登录</p>
+</li>
+</ol>
+<h3 class="atx" id="启动实例需要的权限">启动实例需要的权限</h3>
+<ul>
+<li><p>操作系统管理员权限, Linux或UNIX下, 具有属于DBA组或oinstall组的OS用户通过 sqlplus / as sysdba 连接后, 输入startup启动</p>
+</li>
+<li><p>在Oracle系统中, 授予SYSDBA或SYSOPER权限的oracle用户, 远程以密码方式连接 sqlplus sys/sysz_password@service_name as sysdba</p>
+</li>
+<li><p>能远程以sysdba连接的条件</p>
+<ul>
+<li><p>密码文件存在</p>
+<ul>
+<li><p>密码文件存放的是sys账号的密码</p>
+</li>
+<li><p>建立密码文件要重新启动数据库, 因为内存中保留有原来的密码</p>
+</li>
+<li><p>初始化参数remote_login_passwordfile=none则数据库设置为禁止使用密码文件</p>
+</li>
+<li><p>创建密码文件</p>
+<pre><code class="fenced-code-block language-shell">orapwd <span class="token assign-left variable">file</span><span class="token operator">=</span><span class="token variable">$ORACLE_HOME</span>/dbs/orapwSID <span class="token assign-left variable">password</span><span class="token operator">=</span><span class="token number">123456</span> <span class="token assign-left variable">force</span><span class="token operator">=</span>y</code></pre>
+</li>
+</ul>
+</li>
+<li><p>参数remote_login_passwordfile设置为EXCLUSIVE</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="atx" id="4-实例启动的三个阶段">4. 实例启动的三个阶段</h2>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-06-11-40-37-image.png"></p>
+<h2 class="atx" id="5-startup">5. startup</h2>
+<h3 class="atx" id="startup命令语法">startup命令语法</h3>
+<pre><code class="fenced-code-block language-sql">startup <span class="token punctuation">[</span><span class="token keyword">force</span><span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">restrict</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>pfile<span class="token operator">=</span>filename<span class="token punctuation">]</span><span class="token punctuation">[</span>spfile<span class="token operator">=</span>filename<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">open</span> <span class="token punctuation">[</span>recover<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token keyword">database</span><span class="token punctuation">]</span><span class="token operator">|</span>mount<span class="token operator">|</span>nomount<span class="token punctuation">]</span></code></pre>
+<h3 class="atx" id="数据库只读模式">数据库只读模式</h3>
+<p>默认打开数据库是读写模式。只读模式，数据库只能读，无法写入、更新等操作。
+• 数据文件可以offline或online，但永久表空间不能offline。
+• Offline的数据文件可以恢复。
+• 控制文件可以更新修改，其记录的是数据库的状态。
+• 临时表空间可以被创建，不涉及数据库数据。
+• Alter日志、trace文件、audit文件可以正常进行。</p>
+<p>数据库可以以只读方式打开</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SQL</span><span class="token operator">&gt;</span> startup mount<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">open</span> <span class="token keyword">read</span> only<span class="token punctuation">;</span></code></pre>
+<h2 class="atx" id="6-shutdown">6. shutdown</h2>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-06-12-03-02-image.png"></p>
+<h3 class="atx" id="normal">NORMAL</h3>
+<p>正常关闭数据库，在 Normal 关闭数据库时，除了不允许建立新的连接外，允许当前正在进行的会话继续进行，当前正在进行的事务，也可正常运行直到终止。
+例子：（两个会话，以 NORMAL 方式关闭，必须等待另一会话退出，另一会话中仍可以执行 DML、Select、DDL等语句，另一会话退出，数据库才会关闭）。
+在所有的会话正常退出后，Normal 才会关闭数据库。
+在等待期间，不能有新的连接，不过仍然可以有新的事务。</p>
+<h3 class="atx" id="transactional">TRANSACTIONAL</h3>
+<p>会等待所有的事务结束后，就关闭数据库。无论会话是否退出。
+在TRANSACTIONAL完成关闭操作期间，不允许有的事务，更不允许连接。</p>
+<h3 class="atx" id="immediate">IMMEDIATE</h3>
+<p>ORACLE会自动回退没有提交的事物，断开所有连接，关闭所有没有结束的会话，立即关闭数据库。</p>
+<blockquote>
+<p>以上 3 种关闭方式，在数据库关闭前，都会<strong>先将 buffer cache 中的脏数据刷新至磁盘文件</strong>，这个操作在 Oracle 中被称为<strong>完全检查点</strong>。因为所有的脏数据都被写进磁盘，因此，<strong>不会丢失用户所做的修改</strong>。下一次启动时也不需要利用日志进行恢复。我们称这种方式关闭的数据库是一致的数据库，也称为干净的数据库。</p>
+</blockquote>
+<h3 class="atx" id="abort">ABORT</h3>
+<p>关闭数据库的话，ORACLE 会立即退出，并不刷新脏数据到磁盘。
+Abort 时的操作，就好象断电和死机一样，Oracle立即中止。</p>
+<p>我们通常可以<strong>利用这种方式来模拟数据库出现故障后的情况</strong>，来熟悉如死机、掉电等突发情况后的 Oracle 的恢复。
+ABORT 关闭数据库后，数据库将是不一致的或着是脏的，下次启动时是需要读取日志来进行恢复的。</p>
+<h1 class="atx" id="controlfiles">controlfiles</h1>
+<ul>
+<li><p>内容</p>
+<ul>
+<li><p>数据库名字</p>
+</li>
+<li><p>数据库创建时间</p>
+</li>
+<li><p>表空间名字</p>
+</li>
+<li><p>数据文件和日志文件的路径</p>
+</li>
+<li><p>当前redo日志序列号检查</p>
+</li>
+<li><p>检查点信息</p>
+</li>
+<li><p>undo信息</p>
+</li>
+<li><p>redo日志归档信息</p>
+</li>
+<li><p>备份信息</p>
+</li>
+</ul>
+</li>
+<li><p>查询某些文件空间的总数以及已使用的数量</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> v$controlfile_record_section<span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-08-15-44-31-image.png"></p>
+<ul>
+<li><p>查询控制文件的名称位置和状态</p>
+<pre><code class="fenced-code-block language-sql"><span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> v$controlfile</code></pre>
+</li>
+</ul>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-08-15-47-15-image.png"></p>
+<ul>
+<li><p>增加/删除控制文件</p>
+<pre><code class="fenced-code-block language-sql"><span class="token comment"># 修改spfile中的参数</span>
+<span class="token comment"># # 增加即将参数值在原有的文件名上再加入一个文件名</span>
+<span class="token comment"># # 删除即在原有参数值上删掉要删除的文件名</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> system <span class="token keyword">set</span> control_files<span class="token operator">=</span><span class="token string">'/oradata/zzdb1/control01.ctl'</span><span class="token punctuation">,</span><span class="token string">'/oradata/zzdb1/control02.ctl'</span> scope<span class="token operator">=</span>spfile<span class="token punctuation">;</span>
+
+<span class="token comment"># 关闭数据库</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">shutdown</span> immediate
+
+<span class="token comment"># 复制或删除对应文件</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token operator">!</span>cp <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>control01<span class="token punctuation">.</span>ctl <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>control02<span class="token punctuation">.</span>ctl
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token operator">!</span>mv <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>control02<span class="token punctuation">.</span>ctl <span class="token operator">/</span>oracle
+
+ <span class="token comment"># 开启数据库</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> startup
+
+<span class="token comment"># 查看是否修改成功</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">show</span> parameter control_files<span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<blockquote>
+<p>问题: </p>
+<blockquote>
+<p>当数据库处于open状态时, 操作系统端误删除某一个控制文件, 此时正常关闭数据库会报错, 如何恢复正常?</p>
+</blockquote>
+<p>解决: </p>
+<blockquote>
+<p><strong>shutdown abort后将缺少的控制文件复制恢复(有问题)</strong></p>
+</blockquote>
+</blockquote>
+<h1 class="atx" id="redo-logs">redo logs</h1>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-09-09-04-16-image.png"></p>
+<h3 class="atx" id="基本概念">基本概念</h3>
+<ul>
+<li><p>一组相同的联机重做日志文件副本称作online redo log group</p>
+</li>
+<li><p>组内的每个联机重做日志文件称为member</p>
+</li>
+<li><p>online redo log group和member的初始化是在<strong>数据库创建时</strong>创建的</p>
+</li>
+<li><p>重做日志文件：online和archived两种。</p>
+</li>
+</ul>
+<h3 class="atx" id="联机重做日志文件-online-redo-log-file">联机重做日志文件 Online redo log file</h3>
+<ul>
+<li>记录了数据的变化</li>
+<li>提供了恢复机制</li>
+<li>以组的形式</li>
+<li>至少需要两组</li>
+</ul>
+<pre><code class="fenced-code-block language-sql"><span class="token comment"># 查看是否可用与文件名</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> v$logfile<span class="token punctuation">;</span>
+
+    <span class="token keyword">GROUP</span><span class="token comment"># STATUS  TYPE    MEMBER                          IS_</span>
+<span class="token comment">---------- ------- ------- -----------------------------  ---</span>
+     <span class="token number">1</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo01a<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+     <span class="token number">1</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo01b<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+     <span class="token number">2</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo02a<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+     <span class="token number">2</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo02b<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+     <span class="token number">3</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo03a<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+     <span class="token number">3</span>       ONLINE  <span class="token operator">/</span>oradata<span class="token operator">/</span>zzdb1<span class="token operator">/</span>redo03b<span class="token punctuation">.</span>log               <span class="token keyword">NO</span>
+
+<span class="token comment"># 查看状态等相关信息</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">select</span> <span class="token keyword">group</span><span class="token comment">#,status,sequence#,blocksize,members from v$log;</span>
+
+<span class="token keyword">GROUP</span><span class="token comment">#     STATUS    SEQUENCE#   BLOCKSIZE     MEMBERS</span>
+<span class="token comment">------ ----------  ----------  ----------   --------</span>
+     <span class="token number">1</span>   INACTIVE            <span class="token number">70</span>          <span class="token number">512</span>           <span class="token number">2</span>
+     <span class="token number">2</span>    <span class="token keyword">CURRENT</span>           <span class="token number">71</span>          <span class="token number">512</span>           <span class="token number">2</span>
+     <span class="token number">3</span>   INACTIVE            <span class="token number">69</span>          <span class="token number">512</span>           <span class="token number">2</span></code></pre>
+<h4 class="atx" id="操作">操作</h4>
+<pre><code class="fenced-code-block language-sql"><span class="token comment"># 增加:增加后需切换当前log才可用</span>
+<span class="token comment"># # 增加group</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">add</span> logfile <span class="token keyword">group</span> <span class="token number">3</span><span class="token punctuation">(</span><span class="token string">'/oradata/zzdb1/redo03a.log'</span><span class="token punctuation">,</span><span class="token string">'/oradata/zzdb1/redo03b.log'</span><span class="token punctuation">)</span> 
+   <span class="token operator">/</span> size <span class="token number">4</span>m blocksize <span class="token number">512</span> reuse<span class="token punctuation">;</span>
+<span class="token comment"># # 增加member</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">add</span> logfile member <span class="token string">'/oradata/zzdb1/redo01b.log'</span> <span class="token keyword">to</span> <span class="token keyword">group</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token comment"># 删除:当前组不可删除,删除后组数不可少于两组, 最后一个成员不可删除</span>
+<span class="token comment"># # 删除group</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">drop</span> logfile <span class="token keyword">group</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token comment"># # 删除member</span>
+<span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">drop</span> logfile member <span class="token string">'/oradata/zzdb1/redo01b.log'</span><span class="token punctuation">;</span>
+<span class="token comment"># 清空log:当前log不可删除</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> clear logfile <span class="token keyword">group</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token comment"># 切换当前log:不建议轻易使用</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> system switch logfile<span class="token punctuation">;</span></code></pre>
+<blockquote>
+<p>问题 : 生产环境中如何增加组与成员?</p>
+</blockquote>
+<h4 class="atx" id="日志切换">日志切换</h4>
+<ul>
+<li><p>重做日志文件是以<strong>循环方式</strong>使用的。一旦某个重做日志文件被写满，LGWR就会移动到下一个日志组，这称为日志切换，同时还将执行检查点操作，将信息写入控制文件。</p>
+</li>
+<li><p>Oracle服务器将对数据库所做的所有更改按顺序记录到redo log buffer中。
+LGWR进程把 redo entries 从 redo log buffer 写入 online redo log group 的其中一个组，这个组叫做The current online redo log group</p>
+</li>
+<li><p>日志切换方式</p>
+<ul>
+<li>自动切换：日志写满oracle会写下一个组</li>
+<li>手工切换：alter system switch logfile;</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-09-14-12-48-image.png"></p>
+<h3 class="atx" id="检查点">检查点</h3>
+<ul>
+<li><p>完全检查</p>
+<ol>
+<li>一致性shutdown数据库，除了abort之外的其他三种关闭方式。</li>
+<li>alter system checkpoint;
+完全检查后，所有的脏数据块都写入数据文件，改写文件的头。</li>
+</ol>
+</li>
+<li><p>增量检查
+除了完全检查点以外的所有其它检查点都是增量检查点，增量检查是查找检查点列表，将某一个时间点做标记，该时间点前的脏块写入到数据文件，增量检查不一定马上执行，根据脏的块多少来决定，这就出现了检查点滞后的情况。</p>
+</li>
+</ul>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-09-11-04-17-image.png"></p>
+<blockquote>
+<p>问题: 什么时候事务4被包含什么时候不被包含</p>
+</blockquote>
+<ul>
+<li><p>FAST_START_MTTR_TARGET参数指定了实例异常崩溃后恢复需要的秒数。</p>
+</li>
+<li><p>log_checkpoints_to_alert决定是否将检查点的信息写入alert日志。默认为假，不写日志。</p>
+</li>
+</ul>
+<h3 class="atx" id="归档重做日志文件archived-redo-log-file">归档重做日志文件Archived redo log file</h3>
+<ul>
+<li><p>文件系统异常，使用<strong>归档重做日志</strong>以及<strong>在线重做日志</strong>及<strong>备份数据文件</strong>将<strong>数据库恢复</strong>到适当的时间点。</p>
+</li>
+<li><p>业务人员操作失误，例如，误删除表，<strong>可将数据库恢复到删除表之前的某一个时间点</strong>。</p>
+</li>
+<li><p>NOARCHIVELOG模式
+在NOARCHIVELOG模式下，每次联机重做日志文件已满并发生日志切换时，都要<strong>覆盖联机重做日志文件。</strong>
+直到对重做日志文件组的检查点操作完成后，LGWR才覆盖该重做日志文件组。</p>
+</li>
+<li><p>ARCHIVELOG模式
+如果数据库配置为在 ARCHIVELOG 模式运行下，那么必须将<strong>已满的</strong>联机重做日志文件的<strong>不活动组</strong>归档。
+因为对<strong>数据库所做的所有更改都记录在联机重做日志文件</strong>内，数据库管理员可以使用<strong>物理备份</strong>和<strong>归档的联机重做日志文件</strong>恢复数据库，而不会丢失任何<strong>已提交数据</strong>。</p>
+</li>
+<li><p>归档模式开启</p>
+<pre><code class="fenced-code-block language-sql"><span class="token comment"># 开启归档</span>
+<span class="token comment"># # 开启之前创建归档的文件夹</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">shutdown</span> immediate<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> startup mount<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> archivelog<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> system <span class="token keyword">set</span> log_archive_dest_1<span class="token operator">=</span><span class="token string">'LOCATION=/oradata/archive'</span><span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">open</span><span class="token punctuation">;</span>
+<span class="token comment"># 关闭归档</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">shutdown</span> immediate<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> startup mount<span class="token punctuation">;</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> noarchivelog<span class="token punctuation">;</span>
+<span class="token comment"># SQL&gt; alter system set log_archive_dest_1='LOCATION=/oradata/archive';</span>
+<span class="token keyword">SQL</span><span class="token operator">&gt;</span> <span class="token keyword">alter</span> <span class="token keyword">database</span> <span class="token keyword">open</span><span class="token punctuation">;</span></code></pre>
+</li>
+</ul>
+<p><img alt="" src="file:///D:/Documents/Oracle%E8%BF%90%E7%BB%B4%E5%AE%9E%E6%88%98/assets/2021-12-09-14-34-48-image.png"></p>
+<h2 class="atx" id="附加">附加</h2>
+<h3 class="atx" id="数据库审计">数据库审计</h3>
+<p>数据库审计是对数据库访问行为进行监管的系统，一般采用旁路部署的方式，通过镜像或探针的方式采集所有数据库的访问流量，并基于SQL语法、语义的解析技术，记录下数据库的<strong>所有访问和操作行为</strong>，例如<strong>访问数据的用户</strong>（IP、账号、时间），<strong>操作</strong>（增、删、改、查）、<strong>对象</strong>（表、字段）等。</p>
+<p>数据库审计系统的主要价值有两点:</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;1. 在发生数据库安全事件（例如数据篡改、泄露）后为事件的追责定责提供依据</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;2. 针对数据库操作的风险行为进行时时告警。</p>
+<p>控制参数 : AUDIT_TRAIL 默认值为NONE</p>
+<p><strong>AUDIT_TRAIL</strong> = { none | os | db | db_extended | xml | xml_extended }</p>
+<p> -
+none 禁用数据库审计,默认值</p>
+<ul>
+<li><p>os 启用数据库审计，并将数据库审计记录定向到操作系统审计记录</p>
+</li>
+<li><p>db 启用数据库审计，并将数据库所有审计记录定向到数据库的SYS.AUD$表</p>
+</li>
+<li><p>db_extended 启用数据库审计，并将数据库所有审计记录定向到数据库的SYS.AUD$ 表。另外，填充SYS.AUD$表的SQLBIND 列和SQLTEXT CLOB 列。</p>
+</li>
+<li><p>xml 启用数据库审计，并将所有记录写到XML格式的操作系统文件中。</p>
+</li>
+<li><p>xml_extended 启用数据库审计，输出审计记录的所有列，包括SqlText和SqlBind的值。</p>
+</li>
+</ul>
+<h3 class="atx" id="temporary-tablespace-临时表空间">Temporary tablespace 临时表空间</h3>
+<p>临时表空间主要用途是在<strong>数据库进行排序运算</strong>[如创建索引、order by及group by、distinct、union/intersect/minus/、sort-merge及join、analyze命令]、<strong>管理索引</strong>[如创建索引、IMP进行数据导入]、<strong>访问视图</strong>等操作时<strong>提供临时的运算空间</strong>，当运算完成之后<strong>系统会自动清理</strong>。</p>
+<p><strong>当临时表空间不足时，表现为运算速度异常的慢，并且临时表空间迅速增长到最大空间（扩展的极限），并且一般不会自动清理了。</strong></p>
+<p>如果临时表空间没有设置为自动扩展，则临时表空间不够时事务执行将会报<strong>ora-01652</strong>&nbsp;无法扩展临时段的错误</p>
+<p>解决方法:</p>
+<p>1、设置临时数据文件自动扩展</p>
+<p>2、增大临时表空间。</p>
+<h3 class="atx" id="脚本说明">脚本说明</h3>
+<h4 class="atx" id="catalogsql">catalog.sql</h4>
+<p><strong>catalog.sql</strong> 脚本在<strong>基表和动态性能视图及其同义词上创建视图</strong></p>
+<p> 还启动其它脚本创建以下项目的对象</p>
+<ol>
+<li><p>基本 PL/SQL 环境包括 PL/SQL 声明</p>
+<p>1)数据类型
+2)预定义异常
+3)内置过程和函数
+4)SQL 操作</p>
+</li>
+<li><p>审计</p>
+</li>
+<li><p>导入/导出</p>
+</li>
+<li><p>SQL*Loader</p>
+</li>
+<li><p>已安装选项</p>
+</li>
+</ol>
+<h4 class="atx" id="catprocsql">catproc.sql</h4>
+<p><strong>catproc.sql</strong> 脚本<strong>建立 PL/SQL 功能的使用</strong>, 此外它创建几个可用于<strong>扩展RDBMS 功能的 PL/SQL 程序包</strong>。</p>
+<p>catproc.sql 脚本还为以下项目创建其它程序包和视图
+1 .警报
+2 .管道
+3 .Logminer
+4 .大型对象
+5 .对象
+6 .高级排队
+7 .复制选项
+8 .其它内置项目和选项</p>
+<h4 class="atx" id="pupbldsql">pupbld.sql</h4>
+<p>有时出于安全考虑<strong>需要禁止一些业务系统的数据库用户执行sqlplus命令</strong>，方法很简单：在运行命令之前，将这些命令限制到一个由 SQLPlus 引用的“特殊位置”。 此特殊位置是SYSTEM 模式中一个名为<strong>PRODUCT_USER_PROFILE</strong> 的表。 如果该表不存在，则您在每次启动 SQLPlus 时将获得一个类似“Product User Profile Not Loaded”这样的警告。</p>
+<p>为了创建这个表，需要运行pupbld.sql脚本。通常，这个脚本在$ORACLE_HOME/sqlplus/admin 路径中运行，具体的位置由系统决定。</p>
+</article>
+</body>
+</html>
