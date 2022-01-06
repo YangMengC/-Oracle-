@@ -63,13 +63,14 @@
 
 ![](D:\Documents\Oracle运维实战\assets\a900036516d9f4c42d682e7a424ffdfb6e85d6da.png)
 
-
-
 7. 开机自动挂载
    
    ```shell
    vim /etc/fstab
-   
-   
-   /dev/sr1 /mnt/cdrom iso9660 defaults 0 1
    ```
+
+   /dev/sr1 /mnt/cdrom iso9660 defaults 0 1
+
+```
+
+```
